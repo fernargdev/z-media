@@ -41,7 +41,7 @@ const userSchema: Schema<IUser> = new mongoose.Schema(
     },
     password: {
       type: String,
-      required: [true, 'Please enter your password'],
+      // required: [true, 'Please enter your password'],
       minlength: [6, 'Password must be at least 6 characters'],
       select: false,
     },
@@ -81,6 +81,7 @@ userSchema.methods.SignAccessToken = function () {
     expiresIn: '5m',
   });
 };
+
 // sign refresh token
 userSchema.methods.SignRefreshToken = function () {
   return jwt.sign({ id: this._id }, process.env.REFRESH_TOKEN || '', {
