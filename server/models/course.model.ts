@@ -101,7 +101,7 @@ const courseSchema = new Schema<ICourse>({
     },
     url: {
       type: String,
-      required: true,
+      // required: true,
     },
   },
   tags: {
