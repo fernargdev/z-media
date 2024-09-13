@@ -108,11 +108,6 @@ const courseSchema = new Schema<ICourse>({
     },
   },
 
-  //   categories: {
-  //     type: String,
-  //     required: true,
-  //   },
-
   tags: {
     type: String,
     required: true,
