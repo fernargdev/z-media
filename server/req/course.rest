@@ -15,3 +15,14 @@ Accept: application/json
     "review": "It's cool",
     "rating": 5
 }
+ 
+### PUT /add-reply
+PUT {{v1}}/add-reply
+Content-Type: application/json
+Accept: application/json
+
+{
+    "comment": "Thank you for you review",
+    "courseId": "66e4cd821ceca1bac93e891a",
+    "reviewId": "66e9ac283907c4a907252662"
+}

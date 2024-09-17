@@ -9,7 +9,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "email": "fernargdev@gmail.com",
+    "email": "rodfernandoangel@gmail.com",
     "password": "12345678"
 }
 
