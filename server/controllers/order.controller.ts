@@ -81,14 +81,7 @@ export const createOrder = CatchAsyncError(
         message: `You have a new order from ${course?.name}`,
       });
 
-      //   TODO: purchased + 1 => logic no work
-      //   course.purchased += 1;
-
-      //   if (course.purchased) {
-      //     course.purchased += 1;
-      //   }
-
-      //   course.purchased ? (course.purchased += 1) : course.purchased;
+      course.purchased += 1;
 
       await course.save();
 
