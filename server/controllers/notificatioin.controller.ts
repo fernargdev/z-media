@@ -20,3 +20,41 @@ export const getNotifications = CatchAsyncError(
     }
   }
 );
+
+// update notification status by admin
+export const updateNotification = CatchAsyncError(
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      // const notification = await NotificationModel.findByIdAndUpdate(
+      //   req.params.id,
+      //   { status: 'read' },
+      //   { new: true }
+      // );
+
+      const notificatioin = await NotificationModel.findById(req.params.id);
+
+      // notificatioin!.status = 'read';
+
+      if (!notificatioin) {
+        return next(new ErrorHandler('Notification not found', 404));
+      }
+
+      notificatioin.status
+        ? (notificatioin.status = 'read')
+        : notificatioin.status;
+
+      await notificatioin.save();
+
+      const notifications = await NotificationModel.find().sort({
+        createdAt: -1,
+      });
+
+      res.status(201).json({
+        success: true,
+        notifications,
+      });
+    } catch (error: any) {
+      return next(new ErrorHandler(error.message, 500));
+    }
+  }
+);

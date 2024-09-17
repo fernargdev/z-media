@@ -6,5 +6,9 @@ GET {{v1}}/test
 ### GET /get-all-notifications
 GET {{v1}}/get-all-notifications
 
+### PUT /update-notification/:id
+PUT {{v1}}/update-notification/66e9cc46dbe5cb136245145b
+
+
 
 
