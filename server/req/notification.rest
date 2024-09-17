@@ -1,0 +1,10 @@
+@v1=http://localhost:8080/api/v1
+
+### GET /test
+GET {{v1}}/test
+
+### GET /get-all-notifications
+GET {{v1}}/get-all-notifications
+
+
+
