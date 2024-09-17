@@ -25,7 +25,7 @@ app.use(
 );
 
 // testing route
-app.get('/test', (req: Request, res: Response, next: NextFunction) => {
+app.get('/api/v1/test', (req: Request, res: Response, next: NextFunction) => {
   res.status(200).json({
     success: true,
     message: 'API is working',

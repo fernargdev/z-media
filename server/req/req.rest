@@ -1,0 +1,27 @@
+@v1=http://localhost:8080/api/v1
+
+### GET /test
+GET {{v1}}/test
+
+### GET /get-courses
+GET {{v1}}/get-courses
+
+### POST /login
+POST {{v1}}/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "fernargdev@gmail.com",
+    "password": "12345678"
+}
+
+### PUT /add-review/:id
+PUT {{v1}}/add-review/66e4cd821ceca1bac93e891a
+Content-Type: application/json
+Accept: application/json
+
+{
+    "review": "It's cool",
+    "rating": 5
+}
