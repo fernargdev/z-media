@@ -492,7 +492,8 @@ export const deleteUser = CatchAsyncError(
 
       res.status(200).json({
         success: true,
-        user,
+        // user,
+        message: 'User deleted successfully',
       });
     } catch (error: any) {
       return next(new ErrorHandler(error.message, 400));

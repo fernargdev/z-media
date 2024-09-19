@@ -162,3 +162,6 @@ Accept: application/json
 
 ### GET /get-all-courses
 GET {{v1}}/get-all-courses
+
+### DELETE /delete-course/:id
+DELETE {{v1}}/delete-course/66ec691ed08a0186c2f13151
