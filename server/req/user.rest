@@ -96,3 +96,7 @@ Accept: application/json
     "role": "admin"
 }
 
+
+### DELETE /delete-user
+DELETE {{v1}}/delete-user/66e3144d6168b94d8019fded
+
