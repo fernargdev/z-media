@@ -64,7 +64,7 @@ Accept: application/json
  "email": "fernargdev@gmail.com"
 }
 
-### POST /update-user-password
+### PUT /update-user-password
 PUT {{v1}}/update-user-password
 Content-Type: application/json
 Accept: application/json
@@ -74,7 +74,7 @@ Accept: application/json
     "newPassword": "12345678"
 }
 
-### POST /update-user-avatar
+### PUT /update-user-avatar
 PUT {{v1}}/update-user-avatar
 Content-Type: application/json
 Accept: application/json
@@ -85,4 +85,14 @@ Accept: application/json
 
 ### GET /get-users
 GET {{v1}}/get-users
+
+### PUT /update-user-role
+PUT {{v1}}/update-user-role
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": "66e3144d6168b94d8019fded",
+    "role": "admin"
+}
 
