@@ -12,4 +12,7 @@ Accept: application/json
     "courseId": "66e4cd821ceca1bac93e891a"
 }
 
+### GET /get-orders
+GET {{v1}}/get-orders
+
 

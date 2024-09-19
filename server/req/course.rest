@@ -159,3 +159,6 @@ Accept: application/json
     "courseId": "66e4cd821ceca1bac93e891a",
     "reviewId": "66e9ac283907c4a907252662"
 }
+
+### GET /get-all-courses
+GET {{v1}}/get-all-courses
