@@ -1,0 +1,55 @@
+@v1=http://localhost:8080/api/v1
+
+### GET /test
+GET {{v1}}/test
+
+### POST /registration
+POST {{v1}}/registration
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Angel",
+    "email": "rodfernandoangel@gmail.com",
+    "password": "12345678"
+}
+
+### POST /activate-user
+POST {{v1}}/activate-user
+Content-Type: application/json
+Accept: application/json
+
+{
+    "activation_code": "7818",
+    "activation_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJBbmdlbCIsImVtYWlsIjoicm9kZmVybmFuZG9hbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjEyMzQ1Njc4In0sImFjdGl2YXRpb25Db2RlIjoiNzgxOCIsImlhdCI6MTcyNjMzMDk2NSwiZXhwIjoxNzI2MzMxMjY1fQ.h4VuCXGe17Anb_WpS37qqwzMu-PuY32AcuXrVSSwGNE"
+}
+
+### POST /login
+POST {{v1}}/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "rodfernandoangel@gmail.com",
+    "password": "12345678"
+}
+
+### POST /logout
+GET {{v1}}/logout
+
+### POST /refresh
+GET {{v1}}/refresh
+
+### POST /me
+GET {{v1}}/me
+
+### POST /social-auth
+POST {{v1}}/social-auth
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "test",
+    "email": "test@gmail.com",
+    "password": "https://test.com" 
+}
